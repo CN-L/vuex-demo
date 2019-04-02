@@ -1,11 +1,17 @@
 <template>
     <div>
         ComA <br>
-        {{$store.state.count}}
+        不推荐此写法{{$store.state.count}}
+        <br>
+        计算属性{{c}}
     </div>
 </template>
 <script>
 export default {
-
+   computed:{
+       c(){
+          return this.$store.state.count
+       }
+   }
 };
 </script>
