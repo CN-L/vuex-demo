@@ -8,10 +8,10 @@
 </template>
 <script>
 export default {
-   computed:{
-       c(){
-          return this.$store.state.count
-       }
-   }
+  computed: {
+    c() {
+      return this.$store.state.count;
+    }
+  }
 };
 </script>
