@@ -3,23 +3,24 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
-import Vuex from 'vuex';
+import store from './store';
+// import Vuex from 'vuex';
 
-Vue.use(Vuex);
+// Vue.use(Vuex);
 Vue.config.productionTip = false;
-// vuex创建store
-const store = new Vuex.Store({
-  // 状态（数据）
-  state: {
-    count: 0
-  },
-  // 改变状态
-  mutations: {
-    setcount(state) {
-      state.count++;
-    }
-  }
-});
+// // vuex创建store
+// const store = new Vuex.Store({
+//   // 状态（数据）
+//   state: {
+//     count: 0
+//   },
+//   // 改变状态
+//   mutations: {
+//     setcount(state) {
+//       state.count++;
+//     }
+//   }
+// });
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
