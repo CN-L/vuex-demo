@@ -20,7 +20,11 @@ const store = new Vuex.Store({
     // 第一个参数是state状态
     // 第二个参数就是载荷 就是一个额外的参数
     setCount(state, payload) {
-      state.count = state.count + payload;
+      // 不建议在mutations中执行异步操作改变状态
+      // 模拟异步执行 给状态赋值
+      setTimeout(() => {
+        state.count = state.count + payload;
+      });
     }
   }
 });

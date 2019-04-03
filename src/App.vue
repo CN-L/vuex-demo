@@ -9,6 +9,7 @@
     <hr>
     <com-b></com-b>
     <hr>
+    如果在mutations中执行异步操作更改状态的话 devtool无法跟踪到异步中修改的状态
     <com-c></com-c>
   </div>
 </template>
