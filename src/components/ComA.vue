@@ -3,7 +3,7 @@
         ComA <br>
         不推荐此写法{{$store.state.count}}
         <br>
-        计算属性{{c}}
+        计算属性:{{c}}
     </div>
 </template>
 <script>
