@@ -22,9 +22,21 @@ const store = new Vuex.Store({
     setCount(state, payload) {
       // 不建议在mutations中执行异步操作改变状态
       // 模拟异步执行 给状态赋值
+      // setTimeout(() => {
+      //   state.count = state.count + payload;
+      // });
+      state.count = state.count = state.count + payload;
+    }
+  },
+  actions: {
+    setCount(context) {
+      // context拥有的属性和方法 跟store一样
+      // action中调用mutations,更改状态
+
+      // action中异步调用
       setTimeout(() => {
-        state.count = state.count + payload;
-      });
+        context.commit('setConut', 3);
+      }, 2000);
     }
   }
 });

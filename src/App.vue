@@ -11,6 +11,8 @@
     <hr>
     如果在mutations中执行异步操作更改状态的话 devtool无法跟踪到异步中修改的状态
     <com-c></com-c>
+    <hr>
+    <com-d></com-d>
   </div>
 </template>
 
@@ -18,12 +20,14 @@
 import ComA from './components/ComA';
 import ComB from './components/ComB';
 import ComC from './components/ComC';
+import ComD from './components/ComD';
 export default {
   name: 'App',
   components: {
     ComA,
     ComB,
-    ComC
+    ComC,
+    ComD
   }
 };
 </script>
