@@ -22,7 +22,7 @@
 import { mapState } from 'vuex';
 export default {
   computed: {
-    ...mapState['count', 'msg','name'],
+    ...mapState['count', 'msg'],
     // module 命名空间 作用就是简化我们访问模块中的成员
     //映射模块a中的成员
 
