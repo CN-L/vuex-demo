@@ -13,6 +13,8 @@
     <com-c></com-c>
     <hr>
     <com-d></com-d>
+    <br>
+    <com-e></com-e>
   </div>
 </template>
 
@@ -21,13 +23,15 @@ import ComA from './components/ComA';
 import ComB from './components/ComB';
 import ComC from './components/ComC';
 import ComD from './components/ComD';
+import ComE from './components/ComE';
 export default {
   name: 'App',
   components: {
     ComA,
     ComB,
     ComC,
-    ComD
+    ComD,
+    ComE
   }
 };
 </script>

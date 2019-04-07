@@ -2,8 +2,23 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 Vue.use(Vuex);
-
+const moduleA = {
+  state: {
+    name: '张三',
+    age: 17
+  }
+};
+const moduleB = {
+  state: {
+    hero: '雷锋',
+    sex: '男'
+  }
+};
 const store = new Vuex.Store({
+  modules: {
+    moduleA,
+    moduleB
+  },
   // 状态
   state: {
     count: 0,
