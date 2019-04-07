@@ -3,6 +3,8 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 const moduleA = {
+  // 开启命名空间 默认关闭
+  namespaced: true,
   state: {
     name: '张三',
     age: 17
@@ -16,7 +18,7 @@ const moduleB = {
 };
 const store = new Vuex.Store({
   modules: {
-    moduleA,
+    moduleA: moduleA,
     moduleB
   },
   // 状态
