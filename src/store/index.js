@@ -25,17 +25,17 @@ const store = new Vuex.Store({
       // setTimeout(() => {
       //   state.count = state.count + payload;
       // });
-      state.count = state.count = state.count + payload;
+      state.count = state.count + payload;
     }
   },
   actions: {
-    setCount(context) {
+    setCount(context, payload) {
       // context拥有的属性和方法 跟store一样
       // action中调用mutations,更改状态
 
       // action中异步调用
       setTimeout(() => {
-        context.commit('setConut', 3);
+        context.commit('setCount', payload);
       }, 2000);
     }
   }
