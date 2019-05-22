@@ -2,29 +2,13 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 Vue.use(Vuex);
-const moduleA = {
-  // 开启命名空间 默认关闭
-  namespaced: true,
-  state: {
-    name: '张三',
-    age: 17
-  }
-};
-const moduleB = {
-  state: {
-    hero: '雷锋',
-    sex: '男'
-  }
-};
+
 const store = new Vuex.Store({
-  modules: {
-    moduleA: moduleA,
-    moduleB
-  },
   // 状态
   state: {
     count: 0,
-    msg: 'hello'
+    msg: 'hello',
+    isMain: true
   },
   mutations: {
     add(state) {
@@ -43,6 +27,9 @@ const store = new Vuex.Store({
       //   state.count = state.count + payload;
       // });
       state.count = state.count + payload;
+    },
+    changeStatus(state, payload) {
+      state.isMain = payload;
     }
   },
   actions: {
